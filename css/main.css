@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 90px;
+  width: 940px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 620px;
+      grid-template-columns: 300px 620px;
+  grid-column-gap: 18px;
+}
+
+header .header__container {
+  background-color: #ddd;
+  border-radius: 0 0 5px 5px;
+}
+
+header .header__content {
+  background-color: #ddd;
+  border-radius: 0 0 5px 5px;
+}
+
+header .header__content p {
+  margin-left: 80px;
+  line-height: 100px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+main {
+  height: 530px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 620px 320px;
+      grid-template-columns: 620px 320px;
+}
+
+main .slider__container {
+  position: relative;
+}
+
+main .slider__container .slider__top__row {
+  position: absolute;
+  margin-top: 60px;
+  left: -520px;
+  right: 0;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+main .slider__container .slider__top__row li {
+  float: right;
+}
+
+main .slider__container .slider__bottom__row {
+  position: absolute;
+  top: 270px;
+  left: -520px;
+  right: 160px;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+main .slider__container .slider__bottom__row li {
+  float: right;
+}
+
+main .slider__container li {
+  list-style-type: none;
+  display: inline;
+}
+
+main .slider__container .image {
+  height: 200px;
+  width: auto;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+main .slider__container .slider__button__prev {
+  height: 60px;
+  width: 60px;
+  background-image: url(../img/arrow-gray-left.png);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  position: absolute;
+  top: 270px;
+  right: 0;
+  cursor: pointer;
+}
+
+main .slider__container .slider__button__prev:hover {
+  background-image: url(../img/arrow-blue-left.png);
+  border: solid 1px #21487c;
+}
+
+main .slider__container .slider__button__next {
+  height: 60px;
+  width: 60px;
+  background-image: url(../img/arrow-gray-right.png);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  position: absolute;
+  top: 340px;
+  right: 0;
+  cursor: pointer;
+}
+
+main .slider__container .slider__button__next:hover {
+  background-image: url(../img/arrow-blue-right.png);
+  border: solid 1px #21487c;
+}
+
+main .text__placeholder h1 {
+  color: #21487c;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 1.2;
+  margin: 70px 0 0 20px;
+}
+
+main .text__placeholder p {
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  line-height: 1.5;
+  margin: 20px -20px 0 20px;
+}
+
+footer {
+  background-color: #ddd;
+  height: 100px;
+  width: 940px;
+  border-radius: 5px 5px 0 0;
+}
+
+footer p {
+  margin-left: 80px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100px;
+  letter-spacing: -0.5px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,176 @@
+// Created by Petar Jedvaj in October 2018, updated in May 2019 for factory.hr, Junior Frontend Developer test
+// Copyright: design and images by Factory.hr / HTML, CSS and JS code by Petar Jedvaj
+
+// Global
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+// Variables
+
+$gray: #ddd;
+$blue: #21487c;
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// Header
+header {
+    height: 90px;
+    width: 940px;
+    display: grid;
+    grid-template-columns: 300px 620px;
+    grid-column-gap: 18px;
+    .header__container {
+        background-color: $gray;
+        border-radius: 0 0 5px 5px;
+    }
+    .header__content {
+        background-color: $gray;
+        border-radius: 0 0 5px 5px;
+        p {
+            margin-left: 80px;
+            line-height: 100px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+    }
+}
+
+// Main
+main {
+    height: 530px;
+    display: grid;
+    grid-template-columns: 620px 320px;
+
+    // Slider
+    .slider__container {
+        position: relative;
+        .slider__top__row {
+            position: absolute;
+            margin-top: 60px;
+            left: -520px;
+            right: 0;
+            height: 200px;
+            box-sizing:border-box;
+            overflow: hidden;
+            li {
+                float: right;
+            }
+        }
+        .slider__bottom__row {
+            position: absolute;
+            top: 270px;
+            left: -520px;
+            right: 160px;
+            height: 200px;
+            box-sizing:border-box;
+            overflow: hidden;
+            li {
+                float: right;
+            }
+            
+        }
+        li {
+            list-style-type:none;
+            display:inline;
+        }
+        .image {
+            height: 200px;
+            width: auto;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        //Buttons
+        .slider__button__prev {
+            height: 60px;
+            width: 60px;
+            background-image: url(../img/arrow-gray-left.png);
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: solid 1px $gray;
+            border-radius: 5px;
+            position: absolute;
+            top: 270px;
+            right: 0;
+            cursor: pointer;
+        }
+
+        .slider__button__prev:hover {
+            background-image: url(../img/arrow-blue-left.png);
+            border: solid 1px $blue;
+        }
+
+        .slider__button__next {
+            height: 60px;
+            width: 60px;
+            background-image: url(../img/arrow-gray-right.png);
+            background-size: 10px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: solid 1px $gray;
+            border-radius: 5px;
+            position: absolute;
+            top: 340px;
+            right: 0;
+            cursor: pointer;
+        }
+
+        .slider__button__next:hover {
+            background-image: url(../img/arrow-blue-right.png);
+            border: solid 1px $blue;
+        }
+    }
+
+    // Text
+    .text__placeholder {
+        h1 {
+            color: $blue;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            line-height: 1.2;
+            margin: 70px 0 0 20px;
+        }
+    
+        p {
+            color: black;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+            letter-spacing: -0.2px;
+            line-height: 1.5;
+            margin: 20px -20px 0 20px;
+        }
+    }
+}
+
+// Footer
+footer {
+    background-color: $gray;
+    height: 100px;
+    width: 940px;
+    border-radius: 5px 5px 0 0;
+    p {
+        margin-left: 80px;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 100px;;
+        letter-spacing: -0.5px;
+    }
+}
